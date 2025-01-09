@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>EncipherX - Result</title>
+  <title>Cipher.prasunchakra</title>
   <style>
     * {
       margin: 0;
@@ -12,7 +12,6 @@
     }
 
     body {
-      /* Tech-savvy gradient background */
       background: linear-gradient(to right, #141e30, #243b55);
       min-height: 100vh;
       display: flex;
@@ -22,7 +21,7 @@
     }
 
     .container {
-      background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for “glass” effect */
+      background-color: rgba(255, 255, 255, 0.1); 
       border-radius: 10px;
       backdrop-filter: blur(4px);
       padding: 2rem;
@@ -49,7 +48,7 @@
       border-radius: 5px;
       padding: 1rem;
       margin-bottom: 1rem;
-      min-height: 60px; /* Ensures a visible box even if text is short */
+      min-height: 60px; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -57,7 +56,7 @@
 
     .result-box p {
       margin: 0;
-      word-wrap: break-word; /* In case result is long */
+      word-wrap: break-word; 
     }
 
     button {
@@ -81,7 +80,6 @@
       box-shadow: none;
     }
 
-    /* Responsive Adjustments */
     @media (max-width: 480px) {
       .container {
         padding: 1.5rem;
@@ -98,12 +96,10 @@
     <h1>EncipherX</h1>
     <p class="subtitle">Your Encryption/Decryption Result</p>
 
-    <!-- Result Display -->
     <div class="result-box">
       <p id="resultText">{{ encrypted_text }}</p>
     </div>
 
-    <!-- Copy Button -->
     <button type="button" onclick="copyResult()" style="margin-bottom: 1rem;">Copy Text</button>
     <button type="button" onclick="window.location.href='/'" style="background: linear-gradient(to right, #2c3e50, #3498db);">Back to Home</button>
   </div>
